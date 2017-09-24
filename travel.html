@@ -1,0 +1,13 @@
+---
+layout: default
+title: Путешествия
+---
+
+{% for post in site.categories.travel %}
+<h2><a href="{{post.url|prepend:site.baseurl }}">{{post.title}} </a></h2>
+{{post.description}}<br>
+{{post.date|date:"%d.%m.%y"}}
+<hr>
+{%endfor%}
+   
+
