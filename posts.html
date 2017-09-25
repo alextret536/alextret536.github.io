@@ -1,11 +1,11 @@
 ---
 layout: page
-description: "The latest news"
-title: News
-header-img: "img/home7_1.jpg"
+description: ""
+title: Posts
+header-img: "img/home4.jpg"
 ---
 
-{% for post in site.categories.news %}
+{% for post in site.categories.posts %}
 <h2><a href="{{post.url|prepend:site.baseurl}}">{{post.title}}</a></h2>
 {{post.date|date:"%d.%m.%y."}}
 <hr>
