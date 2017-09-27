@@ -1,0 +1,11 @@
+---
+layout:     post
+title:      "New information!"
+subtitle:   "I have some news."
+category:   "news"
+date:       2017-09-24 
+author:     "Aleksandra Tretyakova"
+header-img: "img/home1.jpg"
+---
+
+News will be here.
