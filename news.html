@@ -1,0 +1,13 @@
+---
+layout: page
+description: "The latest news"
+title: News
+header-img: "img/home7_1.jpg"
+---
+
+{% for post in site.categories.news %}
+<h2><a href="{{post.url|prepend:site.baseurl}}">{{post.title}}</a></h2>
+{{post.date|date:"%d.%m.%y."}}
+<hr>
+{% endfor %}
+
