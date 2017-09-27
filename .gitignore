@@ -1,6 +1,3 @@
 _site
-Gemfile
+node_modules
 Gemfile.lock
-.sass-cache
-.jekyll-metadata
-.DS_Store
