@@ -1,0 +1,58 @@
+---
+layout: page
+title:  About
+permalink: about
+---
+
+<head>
+
+</head>
+<body>
+<p>Hello! My name is Aleksandra, I live in Saint-Petersburg. This is my travel blog.</p> 
+<a href="#">
+    <img src="{{ site.baseurl }}/img/home7_1.jpg" alt="Post Sample Image">
+</a>
+<p>
+
+</p>
+<a href="#">
+    <img src="{{ site.baseurl }}/img/home6.jpg" alt="Post Sample Image">
+</a>
+
+<script src="//code.jquery.com/jquery-latest.js"></script>
+
+<script>
+$('img').width(100).hover(function(){
+$(this).stop().animate({width: 500});
+},
+
+ function(){
+$(this).stop().animate({width: 500});
+ });
+
+</script>
+</body>
+<!-- <h5>Tag cloud <i class="fa fa-cloud info-text-color"></i></h5>
+<ul class="tag-cloud">
+{% for tag in site.tags %}
+  <li style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">
+    <a class="post-tag" href="#{{ tag | first | slugize }}">
+      {{ tag | first }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
+<div class="tag-list">
+{% for tag in site.tags %}
+  <div class="tag-group">
+    {% capture tag_name %}{{ tag | first }}{% endcapture %}
+    <h5 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h5>
+    {% for post in site.tags[tag_name] %}
+    <article class="tag-item">
+      <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div> -->
