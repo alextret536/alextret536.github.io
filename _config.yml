@@ -1,70 +1,17 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title: Travel blog
-email: alextret536@mail.ru
-description: By Aleksandra Tretyakova
-url: # the base hostname & protocol for your site
+# Site Settings
 
+paginate:            5
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Europe/Paris
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+# Customise feed settings (uncommenting following two fields to customise feed title and description)
+#title:		     "Lagrange-Custom"
+#description:	     "a minimalist Jekyll theme-Custom"
 
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: Aleksandra Tretyakova
-  avatar: logo.jpg
-  job: "Travel blog"
-  bio: This is just travel blog by Aleksandra Tretyakova. Enjoy!
-  email: alextret536@mail.ru
-  disqus-shortname:
-  twitter: SashaTretyakova
-  facebook: Alexandra Tretyakova
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: alextret536
-  gitlab: #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  skype: #username
-  xing: #username
-  instagram: sasha_tretyakova
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
-  reddit: #username
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#   path:	     rss-feed.xml
